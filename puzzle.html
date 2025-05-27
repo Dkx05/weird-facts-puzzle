@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weird Facts Puzzle</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="puzzles.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>🧩 Solve the Puzzle to Reveal a Weird Fact!</h1>
+
+  <div class="puzzle-container">
+    <div class="tile" data-index="0"></div>
+    <div class="tile" data-index="1"></div>
+    <div class="tile" data-index="2"></div>
+    <div class="tile" data-index="3"></div>
+    <div class="tile" data-index="4"></div>
+    <div class="tile" data-index="5"></div>
+    <div class="tile" data-index="6"></div>
+    <div class="tile" data-index="7"></div>
+    <div class="tile empty" data-index="8"></div>
+  </div>
+
+  <div class="pass-options">
+    <button id="auto-solve">🧠 Auto Solve</button>
+    <button id="show-answer">👀 Show Answer</button>
+    <button id="skip-puzzle">⏭️ Skip Puzzle</button>
+  </div>
+<div class="next-puzzle">
+  <button id="next-puzzle">🔁 Next Puzzle</button>
+</div>
+
+  <div id="fact-box" class="hidden">
+    <strong id="win-text"></strong>
+    <p id="fact-text"></p>
+  </div>
+</body>
+</html>
